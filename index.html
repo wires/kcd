@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    textarea {
+        border: 1px solid #888; 
+        font-family: monospace;
+        width: 6rem;
+        height: 6rem;
+    }
+    #main {
+        display: flex;
+        width: 100%;
+    }
+    #input {
+        padding: 1rem;
+    }
+    #c {
+        padding: 1rem;
+    }
+    </style>
+</head>
+<body>
+<script src="./index.js"></script>
+<div id="main">
+    <div id='input'>
+width: <input style="width: 2rem" type="number" name="w" id="width" value="4"><br/>
+<textarea id="t">
+1 2  3 1
+4 5 -5 1
+1 1 9 -9
+1 6  7 8
+</textarea><br>
+<button id="b">update</button>
+    </div>
+    <canvas id="c" width="1000" height="1000"></canvas>
+</div>
+</body>
+</html>
